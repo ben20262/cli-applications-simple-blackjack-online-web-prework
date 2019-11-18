@@ -59,13 +59,14 @@ def runner
   welcome()
   total = initial_round()
   until total > 21
-  cards = hit?(total)
-  if cards == total
-    puts "Are you sure you want to stay?"
-    hit?()
-  else
-    total = cards
-    display(total)
+    cards = hit?(total)
+    if cards == total
+      puts "Are you sure you want to stay?"
+      hit?()
+    else
+      total = cards
+      display(total)
+    end
   end
   end_game()
 end
