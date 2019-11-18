@@ -62,7 +62,7 @@ def runner
     cards = hit?(total)
     if cards == total
       puts "Are you sure you want to stay?"
-      hit?()
+      hit?(total)
     else
       total = cards
       display_card_total(total)
