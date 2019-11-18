@@ -18,8 +18,8 @@ def get_user_input
   gets.strip
 end
 
-def end_game
-  # code #end_game here
+def end_game(total)
+
 end
 
 def initial_round
