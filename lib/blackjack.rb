@@ -27,7 +27,9 @@ def initial_round
   2.times do
     cards << deal_card()
   end
-  cards.sum
+  total = cards.sum
+  display_card_total(total)
+  total
 end
 
 def hit?
